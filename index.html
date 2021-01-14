@@ -1,14 +1,15 @@
 <html>
     <head>
-        <base href="/">
         <meta name="keywords" content="fortheshaokahn">
         <meta name="author" content="Mary Kamyshina">
         <meta name="description" content="Hello, World!">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
         <title>
-    Mary`s main page
+            Mary`s main page
         </title>
-        
     </head>
     <body>
         <header>
@@ -56,10 +57,46 @@
 
             <form action="handler.php">
                 <p><b>Как по вашему мнению расшифровывается аббревиатура &quot;ОС&quot;?</b></p>
-                <p><input type="radio" name="answer" value="a1">Офицерский состав<Br>
-                <input type="radio" name="answer" value="a2">Операционная система<Br>
-                <input type="radio" name="answer" value="a3">Большой полосатый мух</p>
-                <p><input type="submit"></p>
+                <p><input type="radio" name="answer" value="a1" id="option1"><label for="option1">Офицерский состав</label><Br>
+                <input type="radio" name="answer" value="a2" id="option2"><label for="option2">Операционная система</label><Br>
+                <input type="radio" name="answer" value="a3" id="option3"><label for="option3">Большой полосатый мух</label></p>
+
+                <p> 
+                    <label>
+                    <input type="checkbox"> <b>Я согласен(на) с правилами пользования данной страницы</b>
+                    </label>
+                        <br>
+                    <label>
+                    <input type="checkbox"> <b>Я согласен(на) с правилами пользования данной страницы, не читая</b>
+                    </label>
+                </p>
+            
+                <p><select name="hero[]">
+                 <option selected disabled>Выберите героя</option>
+                 <option value="Чебурашка">Чебурашка</option>
+                 <option value="Крокодил Гена">Крокодил Гена</option>
+                 <option value="Шапокляк">Шапокляк</option>
+                 <option value="Крыса Лариса">Крыса Лариса</option>
+                </select></p>
+
+                <br>
+                <input type="text" placeholder="Введите текст...">
+                <br>
+                <input type="password" placeholder="Введите пароль...">
+                <br>
+                <input type="email" placeholder="Введите адрес электронной почты...">
+                <br>
+                <input type="file">
+                <br>
+                <input type="hidden">
+                <br>
+                <input type="number" min="-1" max="1" step="0.2">
+
+
+
+                <p><input type="submit" type="reset" type="button" value="Отправить"></p>
+                <p><input type="reset"></p>
+                <p><input type="button"></p>
                </form>
             
             <textarea></textarea>
