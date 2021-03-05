@@ -57,9 +57,9 @@
 
             <form action="handler.php">
                 <p><b>Как по вашему мнению расшифровывается аббревиатура &quot;ОС&quot;?</b></p>
-                <p><input type="radio" name="answer" value="a1" id="option1"><label for="option1">Офицерский состав</label><Br>
-                <input type="radio" name="answer" value="a2" id="option2"><label for="option2">Операционная система</label><Br>
-                <input type="radio" name="answer" value="a3" id="option3"><label for="option3">Большой полосатый мух</label></p>
+                <p><input type="radio" name="answer1" value="a1" id="option1"><label for="option1">Офицерский состав</label><Br>
+                <input type="radio" name="answer2" value="a2" id="option2"><label for="option2">Операционная система</label><Br>
+                <input checked type="radio" name="answer3" value="a3" id="option3"><label for="option3">Большой полосатый мух</label></p>
 
                 <p> 
                     <label>
@@ -67,7 +67,7 @@
                     </label>
                         <br>
                     <label>
-                    <input type="checkbox" tabindex="4"> <b>Я согласен(на) с правилами пользования данной страницы, не читая</b>
+                    <input type="checkbox" checked tabindex="4"> <b>Я согласен(на) с правилами пользования данной страницы, не читая</b>
                     </label>
                 </p>
             
@@ -86,7 +86,7 @@
                 <br>
                 <input type="text" placeholder="Введите текст..." disabled tabindex="7">
                 <br>
-                <input type="password" placeholder="Введите пароль..." required minlength="8" tabindex="9">
+                <input type="password" placeholder="Введите пароль..." name="userpass" required minlength="8" tabindex="9">
                 <br>
                 <input type="email" placeholder="Введите адрес электронной почты..." required tabindex="8">
                 <br>
@@ -98,7 +98,7 @@
 
 
 
-                <p><input type="submit" type="reset" type="button" value="Отправить"></p>
+                <p><input type="submit" type="button" value="Отправить"></p>
                 <p><input type="reset" tabindex="10"></p>
                 <p><input type="button"></p>
             
