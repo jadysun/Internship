@@ -37,8 +37,8 @@
             </table>
             <br/>
 
-            <div><button>Нажми на меня</button>
-            <button>Нет, на меняяяя</button></div>
+            <div><button tabindex="1">Нажми на меня</button>
+            <button tabindex="2">Нет, на меняяяя</button></div>
 
             <p><img src="https://poster.nicefon.ru/2018_03/26/1080x610/2276837b746878f1eae69a.jpg" width="400" height="225"></p>
 
@@ -63,15 +63,15 @@
 
                 <p> 
                     <label>
-                    <input type="checkbox"> <b>Я согласен(на) с правилами пользования данной страницы</b>
+                    <input type="checkbox" tabindex="3"> <b>Я согласен(на) с правилами пользования данной страницы</b>
                     </label>
                         <br>
                     <label>
-                    <input type="checkbox"> <b>Я согласен(на) с правилами пользования данной страницы, не читая</b>
+                    <input type="checkbox" tabindex="4"> <b>Я согласен(на) с правилами пользования данной страницы, не читая</b>
                     </label>
                 </p>
             
-                <p><select name="hero[]">
+                <p><select name="hero[]" tabindex="5">
                  <option selected disabled>Выберите героя</option>
                  <option value="Чебурашка">Чебурашка</option>
                  <option value="Крокодил Гена">Крокодил Гена</option>
@@ -79,33 +79,34 @@
                  <option value="Крыса Лариса">Крыса Лариса</option>
                 </select></p>
 
-                <p><label for="name">Фамилия и имя</label>
-                    <input type="text" id="name" name="username" placeholder="Фамилия и имя">
+                <p><label for="name" tabindex="6">Фамилия и имя</label>
+                    <input type="text" id="name" name="username" placeholder="Фамилия и имя" required>
                 </p>
 
                 <br>
-                <input type="text" placeholder="Введите текст...">
+                <input type="text" placeholder="Введите текст..." disabled tabindex="7">
                 <br>
-                <input type="password" placeholder="Введите пароль...">
+                <input type="password" placeholder="Введите пароль..." required minlength="8" tabindex="9">
                 <br>
-                <input type="email" placeholder="Введите адрес электронной почты...">
+                <input type="email" placeholder="Введите адрес электронной почты..." required tabindex="8">
                 <br>
                 <input type="file">
                 <br>
-                <input type="hidden">
+                <input type="hidden" disabled>
                 <br>
                 <input type="number" min="-1" max="1" step="0.2">
 
 
 
                 <p><input type="submit" type="reset" type="button" value="Отправить"></p>
-                <p><input type="reset"></p>
+                <p><input type="reset" tabindex="10"></p>
                 <p><input type="button"></p>
             
                 <textarea
                 placeholder="Замечания"
                 cols=100
                 rows=3
+                tabindex="11"
                 ></textarea>
             </form>
             </main>
