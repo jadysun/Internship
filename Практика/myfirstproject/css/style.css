@@ -1,31 +1,40 @@
-html, body {
-    margin: 0;
-}
-
-/*div {
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 20px;
-}*/
-.header {
-    position: absolute;
-}
-
-.block-1 {
-    background: #E5E5E5;
-}
-
-/* texturina-regular - latin */
 @font-face {
-    font-family: 'Texturina';
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
-    src: local(''),
-         url('../fonts/texturina-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/texturina-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+    font-display: swap;
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    src: url('../fonts/Gilroy-Regular.woff') format('woff');
+    }
 
-  p {
-    font-family: 'Texturina', serif;
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 250;
+    font-display: swap;
+    src: url('../fonts/Gilroy-UltraLight.woff2') format('woff2');
+    src: url('../fonts/Gilroy-UltraLight.woff') format('woff');
+        }
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+    src: url('../fonts/Gilroy-Bold.woff') format('woff');
+        }
+
+body {
+    font-family: 'Gilroy', serif;
+}
+
+.card {
+    display: block;
+}
+.card--highlighted {
+    background: pink;
+}
+.card__title {
     font-size: 20px;
-  }
-  
+}

@@ -1,31 +1,164 @@
-html, body {
-    margin: 0;
-}
-
-/*div {
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 20px;
-}*/
-.header {
-    position: absolute;
-}
-
-.block-1 {
-    background: #E5E5E5;
-}
-
-/* texturina-regular - latin */
 @font-face {
-    font-family: 'Texturina';
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 400;
-    src: local(''),
-         url('../fonts/texturina-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/texturina-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+    font-display: swap;
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    src: url('../fonts/Gilroy-Regular.woff') format('woff');
+    }
 
-  p {
-    font-family: 'Texturina', serif;
-    font-size: 20px;
-  }
-  
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 250;
+    font-display: swap;
+    src: url('../fonts/Gilroy-UltraLight.woff2') format('woff2');
+    src: url('../fonts/Gilroy-UltraLight.woff') format('woff');
+        }
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+    src: url('../fonts/Gilroy-Bold.woff') format('woff');
+        }
+
+body {
+    font-family: 'Gilroy', serif;
+}
+
+.help {
+    position: absolute;
+    left: 110px;
+    right: 4.44%;
+    top: 54px;
+    bottom: 0%;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #242424;
+    text-decoration: none;
+
+    width: 86px;
+    height: 19px;
+}
+
+.animals {
+    position: absolute;
+    left: 228px;
+    right: 1.14%;
+    top: 54px;
+    bottom: 0%;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #242424;
+    text-decoration: none;
+
+    width: 174px;
+    height: 19px;
+}
+
+.all_about_us {
+    position: absolute;
+    left: 615px;
+    right: 0%;
+    top: 54px;
+    bottom: 0%;
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #242424;
+    text-decoration: none;
+
+    width: 45px;
+    height: 19px;
+}
+
+.contacts {
+    position: absolute;
+    left: 512px;
+    right: 0%;
+    top: 54px;
+    bottom: 0%;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #242424;
+    text-decoration: none;
+
+    width: 72px;
+    height: 19px;
+}
+.contacts::after {
+
+    content: "";
+    position: absolute;
+    background: url('../img/dog\ 1.jpg');
+    width: 718px;
+    height: 713px;
+    left: 538px;
+    top: 0px;
+    z-index: -1;
+}
+.content__promo-content {
+    position: absolute;
+    width: 659px;
+    height: 44 px;
+    left: 110px;
+    top: 273px;
+
+    color: #474747;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.vk {
+    position: absolute;
+    left: 174px;
+    right: 0%;
+    top: 39px;
+    bottom: 0%;
+
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+
+    width: 49px;
+    height: 49px;
+}
+
+.instagram {
+    position: absolute;
+    left: 97px;
+    right: 0%;
+    top: 39px;
+    bottom: 0%;
+
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+
+    width: 49px;
+    height: 49px;
+}
