@@ -24,10 +24,16 @@
     src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
     src: url('../fonts/Gilroy-Bold.woff') format('woff');
         }
-
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
 body {
     font-family: 'Gilroy', serif;
-}
+    font-size: 20px;
+    }
 
 .card {
     display: block;
@@ -37,4 +43,76 @@ body {
 }
 .card__title {
     font-size: 20px;
+}
+
+body {
+    background: grey;
+}
+
+.header {
+    background: white;
+}
+
+h1,
+.find-gift h2 {
+    display: none;
+}
+
+.header__content {
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content__logo {
+    flex-basis: 139px;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__item{
+    margin: 0 10px;
+}
+
+.nav__link {
+    color: black;
+    text-decoration: none;
+}
+
+.find-gift {
+    background: #f1f1f2 url('../img/Background.jpg') right top no-repeat;
+}
+
+.find-gift__title {
+    font-weight: 250px;
+    font-size: 56px;
+    line-height: 64px;
+    margin: 0;
+}
+
+.find-gift__content {
+    width: 50%;
+    padding: 50px 50px 50px 0;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.find-gift__text {
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
