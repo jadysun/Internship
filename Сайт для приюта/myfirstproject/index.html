@@ -9,49 +9,61 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
-
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <header>
-            <ul>
-                <li class="help">
-                    <a href="#">Как помочь</a>
-                </li>
-                <li class="animals">
-                    <a href="#">Подопечные животные</a>
-                </li>
-                <li class="all_about_us">
-                    <a href="#">О нас</a>
-                </li>
-                <li class="contacts">
-                    <a href="#">Контакты</a>
-                </li>
-                <li class="vk">
-                    <a href="#">
-                    <img src="img/vk.svg" alt="Логотип ВК">
-                    </a>
-                </li>
-                <li class="instagram">
-                    <a href="#">
-                    <img src="img/insta.svg" alt="Логотип Инстаграм">
-                    </a>
-                </li>
-            </ul>
+        <header class="header">
+            <nav class="header__content-nav">
+                <div class="nav-left">
+                    <div class="nav__item">
+                        <a class="nav__link"
+                        href="#">Как помочь</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__link"
+                        href="#">Подопечные животные</a>
+                    </div>
+                </div>
+                <div class="nav-center">
+                    <div class="nav__item">
+                        <a class="nav__link"
+                        href="#">О нас</a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__link"
+                        href="#">Контакты</a>
+                    </div class="nav__item">
+                </div>
+                <div class="nav-right">
+                    <div class="nav__item">
+                        <a class="nav__link"
+                        href="#">
+                        <img src="img/vk.svg" alt="Логотип ВК">
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a class="nav__link"
+                        href="#">
+                        <img src="img/insta.svg" alt="Логотип Инстаграм">
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <main>
-            <section >
-                <h1>Спаси жизнь</h1>
-                <p>Благотворительное общественное объединение защиты животных</p>
+            <section>
+                <h1 class="content__caption">СПАСИ ЖИЗНЬ</h1>
+                <p class="content__">Благотворительное общественное объединение защиты животных</p>
                 <p class="content__promo-content">Наша цель: помощь бездомным животным. Также мы поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно.</p>
                 <div>У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</div>
                 <button>Хочу помочь</button>
                 <h2>Я буду лучшим другом</h2>
-                <img src="img/cat 1.jpg" alt="Рыжий кот с белыми полосками">
+                <!-- <img src="img/cat 1.jpg" alt="Рыжий кот с белыми полосками"> -->
             </section>
                 
         </main>

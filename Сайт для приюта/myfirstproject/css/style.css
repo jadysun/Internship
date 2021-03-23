@@ -27,138 +27,56 @@
 
 body {
     font-family: 'Gilroy', serif;
+    width: 1366px;
+    background-color: #F6F6F6;
 }
 
-.help {
-    position: absolute;
-    left: 110px;
-    right: 4.44%;
-    top: 54px;
-    bottom: 0%;
-
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-
+h1 {
+    font-weight: bold;
+    font-size: 72px;
     color: #242424;
-    text-decoration: none;
+    margin: 91px 487px 2px 110px;
 
-    width: 86px;
-    height: 19px;
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 659px;
 }
 
-.animals {
-    position: absolute;
-    left: 228px;
-    right: 1.14%;
-    top: 54px;
-    bottom: 0%;
-
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #242424;
-    text-decoration: none;
-
-    width: 174px;
-    height: 19px;
-}
-
-.all_about_us {
-    position: absolute;
-    left: 615px;
-    right: 0%;
-    top: 54px;
-    bottom: 0%;
-    
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #242424;
-    text-decoration: none;
-
-    width: 45px;
-    height: 19px;
-}
-
-.contacts {
-    position: absolute;
-    left: 512px;
-    right: 0%;
-    top: 54px;
-    bottom: 0%;
-
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #242424;
-    text-decoration: none;
-
-    width: 72px;
-    height: 19px;
-}
-.contacts::after {
-
-    content: "";
-    position: absolute;
-    background: url('../img/dog\ 1.jpg');
-    width: 718px;
-    height: 713px;
-    left: 538px;
-    top: 0px;
-    z-index: -1;
-}
-.content__promo-content {
-    position: absolute;
-    width: 659px;
-    height: 44 px;
-    left: 110px;
-    top: 273px;
-
-    color: #474747;
-
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 140%;
-}
-
-.vk {
-    position: absolute;
-    left: 174px;
-    right: 0%;
-    top: 39px;
-    bottom: 0%;
-
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-
-    width: 49px;
+.header {
     height: 49px;
 }
 
-.instagram {
-    position: absolute;
-    left: 97px;
-    right: 0%;
-    top: 39px;
-    bottom: 0%;
+.header__content-nav {
+    margin: 54px 28px 91px 110px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
+.nav__item {
+    list-style-type: none;
+    margin-left: 32px;
+}
 
-    width: 49px;
-    height: 49px;
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #242424;
 }
