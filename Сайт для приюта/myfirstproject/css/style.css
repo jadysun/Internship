@@ -31,16 +31,7 @@ body {
     background-color: #F6F6F6;
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 72px;
-    color: #242424;
-    margin: 91px 487px 2px 110px;
 
-    display: flex;
-    justify-content: flex-start;
-    flex-basis: 659px;
-}
 
 .header {
     height: 49px;
@@ -79,4 +70,42 @@ h1 {
 .nav__link {
     text-decoration: none;
     color: #242424;
+}
+
+.caption {
+    font-weight: bold;
+    font-size: 72px;
+    color: #242424;
+    margin: 91px 487px 2px 110px;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 659px;
+}
+
+.content__organization {
+    font-size: 16px;
+    color: #6B6B6B;
+    margin-left: 110px;
+    margin-top: 2px;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 659px;
+}
+
+.content__target {
+    font-size: 16px;
+    font-weight: 600;
+    color: #474747;
+    margin: 12px 487px 43px 110px;
+    border: 659px 44px;
+}
+
+.content__description {
+    font-size: 24px;
+    color: #C78100;
+    font-weight: 600;
+    margin: 43px 828px 90px 110px;
+    border: 428px 116px;
 }
