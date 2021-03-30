@@ -4,6 +4,7 @@
         <title>Gift store</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/media.css">
     </head>
     <body>
         <h1>Gift store</h1>
@@ -86,12 +87,16 @@
                         </li>
                     </ul>
                 </section>
-                <section>
-                    <h2>Регистрация</h2>
-                    <p>Готовы начать?</p>
-                    <p>Зарегистрируйтесь или свяжитесь с нами</p>
-                    <button>Найти сейчас</button>
-                    <a href="#">Как это работает</a>
+                <section class="registration">
+                    <div class="registration__content">
+                        <h2>Регистрация</h2>
+                        <p>Готовы начать?</p>
+                        <p>Зарегистрируйтесь или свяжитесь с нами</p>
+                    </div>
+                    <div class="registration__buttons">
+                        <button>Найти сейчас</button>
+                        <a href="#">Как это работает</a>
+                    </div>
                 </section>
                 <section>
                     <h2>Лучшее из нашего блога</h2>
@@ -123,7 +128,7 @@
                 </section>
         </main>
         <footer>
-            <ul>
+            <ul class="footer-navigation">
                 <li>
                     <a href="/">Главная</a>
                 </li>

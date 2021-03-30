@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    src: url('../fonts/Gilroy-Regular.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 250;
+    font-display: swap;
+    src: url('../fonts/Gilroy-UltraLight.woff2') format('woff2');
+    src: url('../fonts/Gilroy-UltraLight.woff') format('woff');
+        }
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+    src: url('../fonts/Gilroy-Bold.woff') format('woff');
+        }
+
+body {
+    background: #fbc832;
+}
+.icon {
+  width: 49px;
+  height: 49px;
+  display: inline-block;
+  background: linear-gradient(150.26deg, #FFE28F 6.75%, #ECBD37 91.17%);
+  box-shadow: 3px 3px 13px #C18F00;
+  border-radius: 100%;
+  top: 200px;
+  left: 300px;
+  position: absolute;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-image: url("../img/Logo\ VK.svg");
+}
+
+.icon::before {
+    content: "";
+    z-index: -1;
+    left: -7px;
+    top: -7px;
+    bottom: -7px;
+    right: -7px;
+    background: red;    
+    border-radius: 100%;
+    position: absolute;
+    background: linear-gradient(144.1deg, #ffe193 12.45%, #ffc93f 89.31%);
+    box-shadow: 7px 7px 16px rgba(204, 151, 0, 0.6), -4px -4px 8px #ffdb7e,
+            inset 13px 22px 8px #f1c74f;
+}
+
+.icon:hover {
+    background: url("../img/Hover\ VK.svg"), linear-gradient(150.26deg, #FFEAAD 6.75%, #FCE6A7 45.73%, #FFC726 91.17%);
+    background-repeat: no-repeat; 
+    background-position: center;
+    box-shadow: 3px 3px 13px #C18F00;
+    }
+
+.icon:hover::before {
+    background: linear-gradient(144.1deg, #ffe193 12.45%, #ffc93f 89.31%);
+    background-repeat: no-repeat; 
+    background-position: center;
+    box-shadow: 7px 7px 16px rgba(204, 151, 0, 0.6), -4px -4px 8px #ffdb7e,
+            inset 13px 22px 8px #f1c74f;
+}
+
+.icon:active {
+    background: url("../img/VK\ after.svg"), 
+            linear-gradient(150.26deg, #FFDA71 6.75%, #FFCD40 43.24%, #FBC11B 91.17%);
+    box-shadow: 2px 2px 6px #C18F00, 
+            inset 3px 3px 10px rgba(199, 129, 0, 0.59);
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.icon:active::before {
+    background: linear-gradient(144.1deg, #FFE193 12.45%, #FFC93F 89.31%);
+    box-shadow: 7px 7px 16px rgba(204, 151, 0, 0.6), -4px -4px 8px #FFDB7E, 
+            inset 13px 22px 8px #F1C74F;
+}
