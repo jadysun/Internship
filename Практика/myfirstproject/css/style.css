@@ -30,26 +30,18 @@ html {
 *, *::after, *::before {
     box-sizing: inherit;
 }
+
 body {
     font-family: 'Gilroy', serif;
     font-size: 20px;
 
     background: grey;
     max-width: 1440px;
+    margin: 0 auto !important;
     }
 
-.card {
-    display: block;
-}
-.card--highlighted {
-    background: pink;
-}
-.card__title {
-    font-size: 20px;
-}
-
 .header {
-    background: white;
+    background: #fafafa;
 }
 
 h1,
@@ -65,8 +57,32 @@ ul {
     margin: 0 auto;
 }
 
+.header-content__btn {
+    display: inline-block;
+	padding: 0 13px;
+	outline: none;
+	border: 1px solid #F7941E;
+    box-sizing: border-box;
+    border-radius: 5px;
+	height: 43px;
+    width: 222px;
+	line-height: 21px;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+	color: #F7941E;
+	background-color: #fafafa;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation; 
+}
+
 .content {
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 0 20px;
     padding: 0 20px;
 }
@@ -102,10 +118,11 @@ ul {
 }
 
 .find-gift__title {
-    font-weight: 250px;
+    font-weight: 250;
     font-size: 56px;
-    line-height: 64px;
+    line-height: 64.23px;
     margin: 0;
+    width: 470px;
 }
 
 .find-gift__content {
@@ -123,6 +140,44 @@ ul {
     margin-top: 40px;
 }
 
+.find-gift__btn {
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 13px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: 1px solid #F7941E;  
+	border-radius: 5px;
+	height: 60px;
+    width: 200px;
+	line-height: 21px;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+	color: #fff;
+	background-color: #F7941E;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation; 
+}
+
+.about-working {
+    background: #F1F1F2 url('../img/Thanks.jpg') left top no-repeat;
+}
+.about-working__content {
+    width: 50%;
+    padding: 50px 50px 50px 0;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
 .card-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -136,7 +191,7 @@ img {
 }
 
 .registration {
-    display: flex;
+    display: flex; 
     align-items: center;
     padding: 58px 0;
     background-color: #F7941E;
@@ -151,3 +206,4 @@ img {
     flex-basis: 50%;
     text-align: center;
 }
+
