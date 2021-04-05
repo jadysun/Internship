@@ -9,10 +9,9 @@
     <body>
         <h1>Gift store</h1>
         <header class="header">
-        <div class="content header__content header-content">
             <div class="header-content__logo">
-            <img src="img/Logo.svg" 
-            alt="Логотип приложения Gift store">
+                <img src="img/Logo.svg" 
+                alt="Логотип приложения Gift store">
             </div>
             <nav class="header-content__nav">
                 <ul class="nav">
@@ -35,25 +34,24 @@
                 </ul>
             </nav>
             <button class="header-content__btn">Поиск подарков</button>
-        </div>
         </header>
         <main>
-                <section class="find-gift">
-                    <div class="content">
-                        <div class="find-gift__content">
-            <h2>Найти подарок</h2>
-            <p class="find-gift__title">Найдите 
-                <br>
-                подарок жене
-                <br>
-                или девушке</p>
-            <p class="find-gift__text">Пытаетесь найти подарок жене или девушке? 
-                Нет проблем!</p>
-            <button class="find-gift__btn">Найти сейчас</button>
-                        </div>
-                    </div>
-                </section>
+            <section class="find-gift">
+                <div class="find-gift__content">
+                    <h2>Найти подарок</h2>
+                    <p class="find-gift__title">Найдите 
+                        <br>
+                        подарок жене
+                        <br>
+                        или девушке</p>
+                    <p class="find-gift__text">Пытаетесь найти подарок жене или девушке? 
+                        <br>Нет проблем!</p>
+                    <button class="find-gift__btn">Найти сейчас</button>
+                </div>
+                <div class="find-gift__background"></div>
+            </section>
                 <section class="about-working">
+                    <div class="about-working__background"></div>
                     <div class="about-working__content">
                         <div class="about-working__title">
                             <h2>Как мы работаем</h2>
@@ -61,12 +59,14 @@
                         <p class="about-working__text">Мы&nbsp;уже опросили сотни женщин, чего они хотят, и&nbsp;создали базу данных с&nbsp;результатами. Все, что вам нужно сделать, 
                         это принять участие в&nbsp;нашем коротком опросе, который займет всего несколько секунд, и&nbsp;наш собственный алгоритм подберет 
                         для вас несколько идеальных вариантов подарков.</p>
-                        <a href="#" class="about-working__link">Узнать больше</a>
+                        <button class="about-working__btn">
+                            <a href="#">Узнать больше</a>
+                        </button>
                     </div>
                 </section>
-                <section>
-                    <h2>Подарки на все случаи жизни</h2>
-                    <p>«Попробуйте наше веб-приложение, чтобы найти лучшие подарки на все случаи жизни»</p>
+                <section class="choosing-gifts">
+                    <h2 class="choosing-gifts__title">Подарки на все случаи жизни</h2>
+                    <p class="choosing-gifts__text">«Попробуйте наше веб-приложение, чтобы найти лучшие подарки на все случаи жизни»</p>
                     <ul class="card-list">
                         <li class="card-list__item card--highlighted">
                             <img class="card__image"
@@ -102,7 +102,7 @@
                         <a href="#">Как это работает</a>
                     </div>
                 </section>
-                <section>
+                <section class="selection-of-articles">
                     <h2>Лучшее из нашего блога</h2>
                     <p>«Заходи на наш блог, чтобы найти лучшие советы и рекомендации по выбору подарка»</p>
                     <ul>

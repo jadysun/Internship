@@ -27,6 +27,7 @@
 html {
     box-sizing: border-box;
 }
+
 *, *::after, *::before {
     box-sizing: inherit;
 }
@@ -35,13 +36,9 @@ body {
     font-family: 'Gilroy', serif;
     font-size: 20px;
 
-    background: grey;
+    background: #E5E5E5;
     max-width: 1440px;
     margin: 0 auto !important;
-    }
-
-.header {
-    background: #fafafa;
 }
 
 h1,
@@ -53,12 +50,19 @@ ul {
     list-style-type: none;
 }
 
-.header__content {
+.header {
+    background: #fafafa;
+    height: 116px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 135px;
 }
 
 .header-content__btn {
     display: inline-block;
+    margin-right: 135px;
 	padding: 0 13px;
 	outline: none;
 	border: 1px solid #F7941E;
@@ -81,21 +85,8 @@ ul {
 	touch-action: manipulation; 
 }
 
-.content {
-    max-width: 1400px;
-    margin: 0 20px;
-    padding: 0 20px;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 135px;
-}
-
 .header-content__logo {
-    flex-basis: 139px;
+    flex-basis: 46px;
 }
 
 .nav {
@@ -104,7 +95,7 @@ ul {
 }
 
 .nav__item{
-    margin: 0 10px;
+    margin: 0 16px;
 }
 
 .nav__link {
@@ -113,8 +104,14 @@ ul {
 }
 
 .find-gift {
+    display: flex;
+    flex-direction: row;
+}
+
+.find-gift__background {
     background: #f1f1f2 url('../img/Background.jpg') right top no-repeat;
-    padding-left: 135px;
+    width: 50%;
+    max-width: 720px;
 }
 
 .find-gift__title {
@@ -125,19 +122,20 @@ ul {
     width: 470px;
 }
 
-.find-gift__content {
+.find-gift__content {                  
     width: 50%;
-    padding: 50px 50px 50px 0;
+    padding: 154px 50px 50px 135px;
     min-height: 700px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    max-width: 720px;
 }
 
 .find-gift__text {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 49px;
+    margin-bottom: 52px;
 }
 
 .find-gift__btn {
@@ -166,17 +164,43 @@ ul {
 }
 
 .about-working {
-    background: #F1F1F2 url('../img/Thanks.jpg') left top no-repeat;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
 }
+.about-working__background {
+    background: #F1F1F2 url('../img/Thanks.jpg') left top no-repeat;
+    width: 50%;
+}
+
 .about-working__content {
     width: 50%;
-    padding: 50px 50px 50px 0;
-    min-height: 700px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
+    padding-left: 115px;
 }
+
+.about-working__title {
+    font-size: 32px;
+    line-height: 45px;
+    width: 261px;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-working__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.13px;
+    display: flex;
+    justify-content: flex-start;
+    width: 441px;
+    height: 197px;
+}
+
+
 
 .card-list {
     display: grid;
