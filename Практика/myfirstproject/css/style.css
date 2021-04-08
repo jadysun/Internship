@@ -42,7 +42,8 @@ body {
 }
 
 h1,
-.find-gift h2 {
+.find-gift h2,
+.registration__content h2 {
     display: none;
 }
 
@@ -51,7 +52,7 @@ ul {
 }
 
 .header {
-    background: #fafafa;
+    background-color: #fafafa;
     height: 116px;
     margin: 0 auto;
     display: flex;
@@ -131,6 +132,7 @@ ul {
     align-items: flex-start;
     justify-content: center;
     max-width: 720px;
+    background-color: #f1f1f2;
 }
 
 .find-gift__text {
@@ -179,39 +181,132 @@ ul {
     flex-direction: column;
     justify-content: center;
     padding-left: 115px;
+    background-color: #f1f1f2;
 }
 
-.about-working__title {
+.about-working__title h2 {
     font-size: 32px;
     line-height: 45px;
-    width: 261px;
     font-weight: 400;
-    display: flex;
-    justify-content: flex-start;
+    margin: 0;
 }
 
 .about-working__text {
     font-size: 20px;
     font-weight: 400;
-    line-height: 28.13px;
+    line-height: 28px;
     display: flex;
     justify-content: flex-start;
     width: 441px;
-    height: 197px;
+    margin: 24px 0 24px 0;
+    text-align: justify;
 }
 
+.about-working__btn {
+    display: inline-block;
+	border: 1px solid #F7941E;
+    box-sizing: border-box;
+    border-radius: 5px;
+	height: 60px;
+    width: 200px;
+	line-height: 62px;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+    text-transform: uppercase;
+	color: #F7941E;
+	background-color: #F1F1F2;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+}
 
+.choosing-gifts {
+    background-color: #ffffff;
+    padding: 96px 135px 137px;
+}
+
+.choosing-gifts__title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.12px;
+    margin: 0;
+    text-align: center;
+}
+
+.choosing-gifts__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.47px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 41px;
+}
 
 .card-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
-    
-}
+    }
 
-img {
+.card-list img {
     max-width: 100%;
     height: auto;
+}
+
+.card-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.03px;
+    margin-left: 24px;
+}
+
+.card-list h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.2px;
+    margin-bottom: 74px;
+    margin-left: 24px;
+}
+
+.card-list__item_happy-b-day {
+    background-color: #fafafa;
+    height: 436px;
+}
+.card-list__item_happy-b-day:hover {
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+
+.card-list__item_anniversary {
+    background-color: #fafafa;
+    height: 436px;
+}
+.card-list__item_anniversary:hover {
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+
+.card-list__item_valentines-day {
+    background-color: #fafafa;
+    height: 436px;
+}
+.card-list__item_valentines-day:hover {
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+}
+
+.card-list__item_christmas {
+    background-color: #fafafa;
+    height: 436px;
+}
+
+.card-list__item_christmas:hover {
+    background-color: #ffffff;
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
 }
 
 .registration {
@@ -219,15 +314,143 @@ img {
     align-items: center;
     padding: 58px 0;
     background-color: #F7941E;
-    margin: 20px;
 }
+
 .registration__content {
     flex-basis: 50%;
-    text-align: center;
+    margin-left: 235px;
+    text-align: left;
+}
+
+.registration__content_question {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0;
+}
+
+.registration__content_text {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 39px;
+    margin: 0;
 }
 
 .registration__buttons {
     flex-basis: 50%;
-    text-align: center;
+    text-align: end;
+    margin-right: 235px;
 }
 
+.registration__btn_find-now {
+    display: inline-block;
+	border: 1px solid #231F20;
+    box-sizing: border-box;
+    border-radius: 5px;
+	height: 50px;
+    width: 200px;
+	line-height: 21px;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+    text-transform: uppercase;
+	color: #ffffff;
+	background-color: #231F20;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+}
+
+.registration__btn_how-its-working {
+    display: inline-block;
+	border: 1px solid rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+    border-radius: 5px;
+	height: 50px;
+    width: 200px;
+	line-height: 24px;
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: none;
+    text-transform: uppercase;
+	color: #000000;
+	background-color: #F7941E;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+}
+
+.selection-of-articles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.selection-of-articles__title {
+    font-size: 32px;
+    line-height: 37.12px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    margin-top: 88px;
+}
+
+.selection-of-articles__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.47px;
+    margin-bottom: 47px;
+}
+
+.main-article__picture {
+    display: inline-block;
+    background: url(../img/Preview.jpg);
+    width: 33%;
+    max-width: 400px;
+    margin-left: -303px;
+}
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.selection-of-articles__main-article {
+    display: flex;
+    justify-content: center;
+    background-color: #231F20;
+    margin-left: 135px;
+    margin-right: 135px;
+    width: 1170px;
+    height: 370px;
+}
+
+.selection-of-articles__main-article img {
+    display: inline-block;
+    max-width: 33%;
+}
+
+.main-article__autor {
+    display: flex;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 63px;
+}
+
+.main-article__title {
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 27px;
+    margin-bottom: 60px;
+}
+
+.main-article__link {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
