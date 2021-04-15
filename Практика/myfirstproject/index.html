@@ -102,79 +102,87 @@
                 </section>
                 <section class="selection-of-articles">
                     <h2 class="selection-of-articles__title">Лучшее из нашего блога</h2>
-                    <p class="selection-of-articles__text">«Заходи на наш блог, чтобы найти лучшие советы и рекомендации по выбору подарка»</p>
-                    <ul>
-                        <li>
-                            <article class="selection-of-articles__main-article">
-                                <div class="main-article__picture">    
+                    <p class="selection-of-articles__text">«Заходи на наш блог, чтобы найти лучшие советы и рекомендации <br>по выбору подарка»</p>
+                    <article class="selection-of-articles__main-article">
+                        <div class="main-article__picture">    
                                     <!-- <img src="img/Preview.jpg" alt="Счастливая пара на качелях"> -->
-                                </div>    
-                                <div class="main-article">
-                                    <p class="main-article__autor">Mr. John Doe</p>
-                                    <h3 class="main-article__title">Лучший способ<br>поздравить жену</h3>
-                                    <a class="main-article__link" href="#">Read More</a>
-                                </div>
-                            </article>
-                        </li>
-                        <li>
-                            <article class="selection-of-articles__database">
-                                <h3>База данных для поиска подарков для девушки</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-                                <a href="#">Читать больше</a>
-                            </article>
-                        </li>
-                        <li>
-                            <article class="selection-of-articles__find-the-best-gift">
-                                <h3>Как ИИ читает ваши мысли, чтобы найти лучший подарок</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-                                <a href="#">Читать больше</a>                               
-                            </article>
-                        </li>
-                    </ul>
+                        </div>    
+                        <div class="main-article">
+                            <p class="main-article__autor">Mr. John Doe</p>
+                            <h3 class="main-article__title">Лучший способ<br>поздравить жену</h3>
+                            <a class="main-article__link" href="#">Read More</a>
+                        </div>
+                    </article>
+                    <div class="selection-of-articles__random-articles ">
+                        <article class="random-articles__database">
+                            <h3 class="database_title">База данных для поиска подарков для девушки</h3>
+                            <p class="database_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                            <a href="#" class="database_link">Читать больше</a>
+                        </article>
+                        <article class="random-articles__find-the-best-gift">
+                            <h3 class="find-the-best-gift_title">Как ИИ читает ваши мысли, чтобы найти лучший подарок</h3>
+                            <p class="find-the-best-gift_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                            <a href="#" class="find-the-best-gift_link">Читать больше</a>                               
+                        </article>
+                    </div>
                 </section>
         </main>
-        <footer>
+        <footer class="footer">
             <ul class="footer-navigation">
-                <li>
-                    <a href="/">Главная</a>
-                </li>
-                <li>
-                    <a href="/">О нас</a>
-                </li>
-                <li>
-                    <img src="img/Logo.svg" alt="Логотип">
-                </li>
-                <li>
-                    <a href="/">Наши сервисы</a>
-                </li>
-                <li>
-                    <a href="/">Блог</a>
-                </li>
+                <div class="navigation-left">
+                    <li class="navigation__item">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/">О нас</a>
+                    </li>
+                </div>
+                
+                    <li class="navigation__item-logo">
+                        <img src="img/logo2.svg" alt="Логотип">
+                    </li>
+                
+                <div class="navigation-right">
+                    <li class="navigation__item">
+                        <a href="/">Наши сервисы</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/">Блог</a>
+                    </li>
+                </div>
             </ul>
-            <ul>
+            <div class="footer-line"></div>
+            <ul class="footer-icons">
                 <li>
-                    <a href="#"></a>
+                    <a href="#">
                     <img src="img/Facebook.svg" alt="Логотип Facebook">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#">
                     <img src="img/Twitter.svg" alt="Логотип Twitter">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#">
                     <img src="img/Instagram.svg" alt="Логотип Instagram">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#">
                     <img src="img/YouTube.svg" alt="Логотип YouTube">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"></a>
+                    <a href="#">
                     <img src="img/Pinterest.svg" alt="Логотип Pinterest">
+                    </a>
                 </li>
             </ul>
-            <p>© 2010 — 2020</p>
-            <a href="#">Privacy — Terms</a>
+            <div class="footer__privacy">
+                <p>© 2010 — 2020</p>
+                <a href="#">Privacy — Terms</a>
+            </div>
         </footer>
     </body>
 </html>
