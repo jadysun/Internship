@@ -24,6 +24,7 @@
     src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
     src: url('../fonts/Gilroy-Bold.woff') format('woff');
         }
+
 html {
     box-sizing: border-box;
 }
@@ -47,6 +48,7 @@ h1 {
     background-color: red;
     display: flex;
     min-height: 200px;
+    animation: shadow  2s infinite ease-in-out;
 }
 
 .nav {
@@ -57,6 +59,7 @@ h1 {
 .content_green {
     background-color: green;
     width: 100px;
+    animation: text-rule 5s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .content_light-green {
@@ -68,6 +71,7 @@ h1 {
     background-color: #003300;
     color: lavender;
     width: 100px;
+    animation: background-rule 10s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .footer {

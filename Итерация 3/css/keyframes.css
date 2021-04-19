@@ -1,0 +1,25 @@
+@keyframes text-rule {
+  from, 
+  to {
+   color: cyan;
+  }
+  25%, 
+  75% {color: darkcyan;}
+  50% {color: darkblue;}
+}
+
+@keyframes shadow {
+  from {text-shadow: 0 0 3px black;}
+  50% {text-shadow: 0 0 30px black;}
+  to {text-shadow: 0 0 3px black;}
+  }
+
+@keyframes background-rule {
+  from, 
+  to {
+  background-color: rgb(73, 148, 148);
+  }
+  25%, 
+  75% {background-color: darkcyan;}
+  50% {background-color: rgb(44, 173, 27);}
+}
